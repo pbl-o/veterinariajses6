@@ -1,18 +1,29 @@
-import fs from "fs";
-import { writeFile } from "node:fs/promises";
+import { registrar, leer, vaciarFichero } from "./operaciones.js";
 
-fs.writeFileSync("texto.txt", "helllo from node.js", (err) => {
-  if (err) {
-    console.log(err);
-  } else {
-    console.log("file created");
-  }
-});
+//omite los primeros dos valores del array ( en este caso ['node', 'index.js'])
+const args = process.argv.slice(2);
 
+//valores requeridos
 
-try {
-await writeFile("hello.txt", "Hello from Node.js 😊");
-console.log("archivo creado");
-} catch (error) {
-console.log(error);
+//tipo de operacion (registrar, leer o borrar)
+const operacion = args[0];
+
+//datos a ingresar para la opción registrar.
+const nombreCita = args[1];
+const edadCita = args[2];
+const tipoCita = args[3];
+const colorCita = args[4];
+const enfermedadCita = args[5];
+
+//Operaciones
+if (operacion === "registrar") {
+  await registrar(nombreCita, edadCita, tipoCita, colorCita, enfermedadCita);
+}
+
+if (operacion === "leer") {
+  await leer();
+}
+
+if (operacion === "borrar") {
+  await vaciarFichero();
 }
