@@ -17,7 +17,7 @@ Instrucciones de instalación y configuración del proyecto:
 1. Clonar repositorio:
 
 ```bash
-git clone https://github.com/pbl-o/veterinaria-js.git
+git clone https://github.com/pbl-o/veterinariajses6.git
 ```
 
 2. Acceder al terminal:
