@@ -20,9 +20,15 @@ Instrucciones de instalación y configuración del proyecto:
 git clone https://github.com/pbl-o/veterinariajses6.git
 ```
 
-2. Acceder al terminal:
+2. Acceder a carpeta 
 
-3. Activar algunas de las funciones predeterminadas de la aplicación escribiendo alguno de las siguientes instrucciones en la terminal:
+```bash
+cd veterinariajses6
+```
+
+3. Acceder al terminal:
+
+4. Activar algunas de las funciones predeterminadas de la aplicación escribiendo alguno de las siguientes instrucciones en la terminal:
 
 REGISTRO DE INFORMACIONES:
 
